@@ -1,28 +1,23 @@
-ckeditor-accordion-plugin
-=========================
-
-Ckeditor plugin to create jquery accordion tabs
-
-
-Installation
+ckeditor accordion plugin para Drupal 7, basado en ffreitasalves/ckeditor-accordion-plugin
 =============
 
-Extract the accordion/ to the ckeditor's plugins folder.
-
-Enable the plugin: 
-
-    config.extraPlugins = 'accordion';
-    
-Plugin Installed:
-
-![alt tag](https://github.com/ffreitasalves/ckeditor-accordion-plugin/blob/master/accordion%20plugin%20installed.png)
+Ckeditor plugin para Drupal 7 para crear un Acordeón de Jquery UI
 
 
-
-Dependencies:
+Instalación
 =============
 
-You must have jquery, jquery-ui and jquery-ui css(any theme you like) in your views:
+Extraer la carpeta accordion en sites/all/modules/ckeditor/plugins
+
+Ir al sitio en la dirección: admin/config/content/ckeditor/edit/Full (o al perfil de ckeditor donde quiera habilitar el plugin)
+Ir a la sección Apariencia del editor y habilitar el plugin. Agregarlo a la barra de herramientas.
+
+
+
+Dependencias:
+=============
+
+Debes tener jquery, jquery-ui and jquery-ui css cualquier tema:
 
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css"> 
     
@@ -30,9 +25,9 @@ You must have jquery, jquery-ui and jquery-ui css(any theme you like) in your vi
     
     <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
 
-Usage:
+Uso:
 =======
-You need this script to show the accordion in your views:
+Debes agregar la inicialización en tus scripts.
 
     <script type="text/javascript">
     
