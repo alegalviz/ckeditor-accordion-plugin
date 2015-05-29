@@ -1,6 +1,6 @@
 CKEDITOR.dialog.add( 'accordionDialog', function ( editor ) {
     return {
-        title: 'Configuração do Accordion',
+        title: 'Configuración del acordeón',
         minWidth: 400,
         minHeight: 200,
         contents: [
@@ -11,17 +11,17 @@ CKEDITOR.dialog.add( 'accordionDialog', function ( editor ) {
                     {
                         type: 'text',
                         id: 'number',
-                        label: 'Número de seções do accordion',
-                        validate: CKEDITOR.dialog.validate.notEmpty( "Não pode ficar vazio" )
+                        label: 'Número de secciones del acordeón',
+                        validate: CKEDITOR.dialog.validate.notEmpty( "No se puede dejar una sección vacía" )
                     }
                 ]
             }
         ],
         onOk: function() {
             var dialog = this;
-            var sections = parseInt(dialog.getValueOf('tab-basic','number')); //Número de seções que serão criadas
+            var sections = parseInt(dialog.getValueOf('tab-basic','number'));
 
-            section = "<h3>Nome da Seção</h3><div><p>Insira o texto da seção do accordion aqui</p></div>"
+            section = "<h3>Título de la sección</h3><div><p>Escriba el texto de la sección aquí</p></div>"
             intern = ""
             for (i=0;i<sections;i++){
                 intern = intern + section
