@@ -1,19 +1,21 @@
+/**
+ * @file Plugin para insertar un acordeón en el cuerpo del texto
+ */
+( function(){
 CKEDITOR.plugins.add( 'accordion', {
-    icons: 'accordion',
-    init: function( editor ) {
-        //adicionando o comando
+    init : function( editor ) {
         editor.addCommand( 'accordionDialog', new CKEDITOR.dialogCommand( 'accordionDialog' ) );
 
-        //setando o botão
         editor.ui.addButton('Accordion', {
-            label: 'Inserir Accordion',
+            label: Drupal.t('Insert Accordion'),
+            icon : this.path + 'icons/accordion.png',
             command: 'accordionDialog',
             toolbar: 'insert'
         });
 
-        //Adicionando a janela de dialogo
         CKEDITOR.dialog.add( 'accordionDialog', this.path + 'dialogs/accordion.js' );
 
 
     }
-});
+})
+})();
